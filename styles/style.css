@@ -173,7 +173,81 @@ nav {
 .popular-collection-sections .seemore i {
   margin-left: 5px;
 }
+/* Featured products sections styles */
 
+.featured-collection-section {
+  width: 1110px;
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  gap: 90px;
+}
+.fc-img {
+}
+.fc-content {
+}
+.fc-title {
+  color: #0a0826;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 60px;
+  margin-bottom: 10px;
+}
+.fc-description {
+  color: #6c6c6c;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 26px;
+}
+.fc-btn {
+  padding: 10px 24px;
+  background: #e02c6d;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  border: 0;
+}
+.fc-btn i {
+  margin-left: 5px;
+}
+/* footer sections styles  */
+footer{
+  background-color: #0A0826;
+  color: #fff;
+  width: 100%;
+}
+.footer-section{
+  width: 280px;
+  margin: 0 auto;
+  padding: 50px 0;
+  text-align: center;
+}
+.footer-section h4{
+  font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+}
+.footer-section p{
+  font-weight: 700;
+font-size: 14px;
+line-height: 24px;
+color: #D9DBE1;
+}
+.footer-section ul{
+  list-style: none;
+  display: flex;
+  width: 184px;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+.footer-section ul li{
+  background-color: #22213C;
+  padding: 5px 10px;
+  border-radius: 50%;
+}
 /* Mobile Phone  */
 
 @media (max-width: 576px) {
@@ -219,15 +293,79 @@ nav {
     gap: 20px;
     margin: 50px 0;
   }
-  .popular-collection-sections{
+  .popular-collection-sections {
     width: 100%;
     margin: 25px auto;
   }
-  .popular-collections{
+  .popular-collections {
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
   }
   .popular-collection-sections .seemore {
     margin: 25px 0;
+  }
+  .featured-collection-section{
+    flex-direction: column-reverse;
+    width: 100%;
+    gap: 50px;
+  }
+  .fc-content{
+    text-align: center;
+  }
+}
+/* table device */
+@media (max-width:768px) {
+  header {
+    width: 100%;
+    height: 100%;
+  }
+  nav {
+    flex-direction: column;
+    padding: 25px 0;
+  }
+  .nav-menu {
+    width: 100%;
+  }
+   .banner-section {
+    flex-direction: column-reverse;
+    gap: 22px;
+    margin-bottom: 30px;
+  }
+  .banner-left {
+    text-align: center;
+  }
+  .banner-right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/Circle\ design.svg);
+    background-position: center;
+    background-size: 450px;
+  }
+  .ad-banner-section {
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+    margin: 50px 0;
+  }
+  .popular-collection-sections {
+    width: 100%;
+    margin: 25px auto;
+  }
+  .popular-collections {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .popular-collections-item:last-of-type{
+    grid-column: 1 / 3;
+  }
+  .featured-collection-section{
+    flex-direction: column-reverse;
+    width: 100%;
+    gap: 50px;
+  }
+  .fc-content{
+    text-align: center;
   }
 }
